@@ -2,6 +2,11 @@
 
 Small ML app that predicts a support **queue** from ticket text (subject + body).
 
+## Screenshot 
+![UI screenshot](assets/ui1.png)
+![UI screenshot](assets/ui2.png)
+![UI screenshot](assets/ui3.png)
+
 ## What it does
 - Input: free-form support ticket text (subject + body).
 - Output: predicted queue + confidence + top-K alternatives.
@@ -30,6 +35,7 @@ support-ticket-router/
     dataset.csv
   artifacts/
     model.joblib
+
 
 
 
