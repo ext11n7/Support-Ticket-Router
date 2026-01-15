@@ -32,22 +32,5 @@ support-ticket-router/
     model.joblib
 
 
-## How to run 
 
-- Create and activate venv
-python3 -m venv .venv
-source .venv/bin/activate
 
-- Install dependencies
-pip install -r requirements.txt
-
-- Download data
-mkdir -p data
-curl -L -o data/dataset.csv \
-  https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets/resolve/main/dataset-tickets-multi-lang-4-20k.csv
-
-- Train model (creates artifacts/model.joblib)
-python train.py
-
-- Run UI
-python -m streamlit run app.py
